@@ -21,4 +21,6 @@ jobs:
       shell: bash
       run: |
         pwd
+        cd ../
+        pwd
         ls -lrt
