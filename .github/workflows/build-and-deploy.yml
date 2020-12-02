@@ -1,0 +1,18 @@
+name: Puppeteer GitHub Actions
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: '.'  # set this to the path to your web app project, defaults to the repository root
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Node 12.x Environment
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x

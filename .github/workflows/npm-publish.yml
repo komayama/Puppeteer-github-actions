@@ -1,4 +1,0 @@
-- name: Setup Node 12.x Environment
-  uses: actions/setup-node@v1
-  with:
-    node-version: 12.x
